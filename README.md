@@ -1,30 +1,23 @@
-<h1 align="center">🌟 My Wallet - Expense tracking app 🌟</h1>
-
+<h1 align="center">💼 SmartKhata – Simplify Your Finances</h1>
 <p align="center">
-  <img alt="Static Badge" src="https://img.shields.io/badge/Spring%20Boot-darkgreen?style=for-the-badge">
-  <img alt="Static Badge" src="https://img.shields.io/badge/React.js-blue?style=for-the-badge">
-  <img alt="Static Badge" src="https://img.shields.io/badge/mysql-red?style=for-the-badge">
-  <img alt="Static Badge" src="https://img.shields.io/badge/css-purple?style=for-the-badge">
-  <img alt="Static Badge" src="https://img.shields.io/badge/jwt-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Spring%20Boot-darkgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/React.js-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/MySQL-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/CSS-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/JWT-orange?style=for-the-badge" />
 </p>
-
-## Table of contents
-
-1. [Descripiton](#description)
-2. [How to run?](#how-to-run)
-3. [Screenshots](#screenshots)
 
 ## Description
 
-- Developed a full-stack expense tracking web application using Spring Boot, React.js, and MySQL, facilitating seamless management of day-to-day finances.
-- Implemented multi-role functionality with user authentication, enabling secure access for both users and administrators, with features such as sign-in, sign-up, password reset, and email verification.
-- Developed intuitive user dashboards, transaction management, upcoming/recurring transactions tracking, monthly summaries, and statistics, budget management.
-- Developed categories, users and transactions management for administrators.
-- Implemented management capabilities including search, filter and pagination.
+1) SmartKhata is a full-stack expense manager that helps you track your income, expenses, budgets, and transactions securely.
+2)  It comes with both user and admin dashboards. Users can add transactions, view summaries, and get insights.
+3)  Admins can manage users, categories, and see the overall statistics.
+4)  It supports JWT-based login, signup, password reset, and email verification using Spring Mail.
+5)   Implemented management capabilities including search, filter and pagination.
 
 ## How to run?
 
-### Step 1: Fork and Clone the Repository
+### Step 1: Clone the Repository
 
 1. Fork the repository to your GitHub account.
 
@@ -71,35 +64,33 @@ npm start
 ```
 
 Access the application at [`http://localhost:3000/`](http://localhost:3000/).
-To get started create a new account using your email.
-
-## Screenshots
-
-![Screenshot 2024-04-18 091658](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/7637b70d-8b9f-485e-84f6-bce3c940f3f2)
-![Screenshot 2024-04-18 091720](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/f58e2e13-7db4-439a-b371-ce9b6e5838c7)
-![Screenshot 2024-04-18 091743](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/dbcfdbd2-d515-4197-b5ff-11ba0aed2dcf)
-![Screenshot 2024-04-18 091803](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/9d271a52-1444-4739-afe4-f51aa616d55e)
-
-Users's stuff
-
-![Screenshot 2024-04-22 153501](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/a8e6d65b-626f-493e-922d-dd7c26d8294c)
-![Screenshot 2024-04-22 153536](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/ed01d05e-cead-43c5-8959-6b64615fee43)
-![Screenshot 2024-04-22 153556](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/40ab0b82-b38d-4a19-9044-d226e3f345ed)
-![Screenshot 2024-04-22 153622](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/8f8bef4e-6735-464f-a180-f2bc17633b1b)
-![Screenshot 2024-04-22 154204](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/994d23f0-e7c1-42a6-9571-44fd4353396e)
-![Screenshot 2024-04-22 154244](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/7e43cb13-6187-4af0-8900-66afef908f66)
-![Screenshot 2024-04-22 154301](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/1b308447-f5ef-4f26-826b-0e9f42e5914f)
+- To get started create a new account using your email.
+- This project is built using Spring Boot (Java) for backend, React.js for frontend, MySQL as database, CSS for styling, Spring Mail for emails, and JWT for secure auth.
 
 
 
-Admin's stuff
 
-![Screenshot 2024-04-18 092245](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/06454812-f542-4404-b9bf-e7d9b96b043d)
-![Screenshot 2024-04-18 092306](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/a024fadc-5f6a-4e3f-96f6-f38dd1f6b477)
-![Screenshot 2024-04-18 092325](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/5e93095e-f4be-4245-b3a4-8653cd9fea27)
-![Screenshot 2024-04-18 092342](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/5d40498e-ec3b-4559-ba15-efdf9c248d22)
-![Screenshot 2024-04-18 092805](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/aa94d2da-0080-421b-a191-d2ff9fb4472f)
-![Screenshot 2024-04-18 092822](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/6cb49c2c-8317-4cec-ad16-b9496d97b16f)
+## Screenshots : This is for users
+![Screenshot (543)](https://github.com/user-attachments/assets/8c67207a-0640-4e94-9a15-5a95d43aef27)
+![Screenshot (545)](https://github.com/user-attachments/assets/4bb64671-16ae-4eda-9ed7-fbae60d7542b)
+![Screenshot (546)](https://github.com/user-attachments/assets/e0aaf254-4492-4e4b-ac70-a5e66e0abe2f)
+![Screenshot (548)](https://github.com/user-attachments/assets/d7212ca2-cccf-4913-a711-7972e4035bcd)
+![Screenshot (556)](https://github.com/user-attachments/assets/3b5f44db-3f31-4788-b040-449c1ac5e81d)
+![Screenshot (549)](https://github.com/user-attachments/assets/d38637fb-799e-4be3-80a1-bf0733442217)
+![Screenshot (551)](https://github.com/user-attachments/assets/3c91efba-6f17-4323-9f81-ed4c65cc1f9e)
+![Screenshot (552)](https://github.com/user-attachments/assets/bc343a00-76af-4cf0-9845-0df98a0bc75e)
+![Screenshot (553)](https://github.com/user-attachments/assets/5525ecf7-ecf4-4b5c-a52a-d8f96bc021c9)
+![Screenshot (554)](https://github.com/user-attachments/assets/2dad7d52-b885-459d-8b82-7dfab75243f5)
+![Screenshot (555)](https://github.com/user-attachments/assets/7b397594-a6ce-4f9e-b4ce-6fb7cf549e38)
+
+Once the Admin logs in, the portal provides access to employee data, allowing it to be viewed and managed securely.
+---
+
+### "Track your money before your money starts tracking you."_ 💸  
+### SmartKhata – helping you make smarter financial choices.
 
 
 
+---
+
+### This project is made by Anshika Gupta(Me) and Abhishek Yadav(abhishek8172)
