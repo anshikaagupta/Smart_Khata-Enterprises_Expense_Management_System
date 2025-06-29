@@ -1,0 +1,275 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: 0;
+}
+
+.auth-form, .login-card-professional {
+    align-self: center;
+    color: #00FF9D;
+    padding: 28px 18px;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #00FF9D33;
+    z-index: 2;
+    background-color: #181818;
+    margin-bottom: 12px;
+    gap: 12px;
+}
+.auth-form .input-box {
+    margin: 10px 0;
+    width: 100%;
+}
+.auth-form input:not([type='submit']) {
+    width: 100%;
+    border: 1.5px solid var(--main);
+    padding: 12px 14px;
+    background: var(--hover);
+    margin-top: 5px;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: var(--second);
+    transition: border 0.2s, box-shadow 0.2s;
+}
+.auth-form input:focus {
+    box-shadow: 0px 0px 6px var(--second);
+    border: 1.5px solid var(--second);
+}
+.auth-form label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--second);
+}
+.auth-form .msg {
+    font-size: 13px;
+    text-align: center;
+}
+.auth-form a {
+    color: var(--second);
+    font-weight: 500;
+}
+.auth-form a:hover {
+    text-decoration: underline;
+}
+.auth-form small {
+    color: rgb(255, 0, 0);
+}
+.auth-form p {
+    color: rgb(255, 0, 0);
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgb(255, 216, 216); 
+    width: 100%;
+    text-align: center;
+}
+.auth-form .input-box:last-of-type {
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+@media all and (max-width: 900px) {
+    .container {
+        padding: 0 2vw;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .auth-form, .login-card-professional {
+        padding: 12px 2px;
+        max-width: 98vw;
+        border-radius: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .auth-form, .login-card-professional {
+        min-width: 0;
+        max-width: 98vw;
+        padding: 8px 1px;
+        border-radius: 8px;
+    }
+}
+
+.login-bg-professional {
+  min-height: 100vh;
+  width: 100vw;
+  background: #f7fbff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.login-card-professional {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(67,137,223,0.10), 0 1.5px 6px rgba(67,137,223,0.04);
+  padding: 40px 36px 32px 36px;
+  min-width: 340px;
+  max-width: 380px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.login-card-professional h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--second);
+  margin-bottom: 12px;
+}
+
+.login-bg-cyber {
+  min-height: 100vh;
+  width: 100vw;
+  background: #181c20;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.login-bg-cyber::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: radial-gradient(ellipse at 60% 0%, rgba(0,255,157,0.10) 0%, #181c20 80%);
+  z-index: 1;
+  pointer-events: none;
+}
+.login-geo-bg {
+  position: absolute;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 2;
+  pointer-events: none;
+}
+.login-finance-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 340px;
+  z-index: 3;
+  pointer-events: none;
+  opacity: 0.55;
+}
+.login-form-card-cyber, .register-form-card-cyber {
+  position: relative;
+  z-index: 10;
+  max-width: 500px;
+  width: 98vw;
+  margin: 32px auto 32px auto;
+  background: rgba(24, 28, 32, 0.92);
+  border-radius: 22px;
+  box-shadow: 0 0 40px #00FF9D55, 0 1.5px 6px #00FF9D22;
+  padding: 38px 48px 38px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  max-height: 800px;
+}
+.register-form-card-cyber label {
+  margin-bottom: 7px;
+  margin-top: 12px;
+  font-size: 1.04rem;
+  color: #b6eaff;
+  letter-spacing: 0.5px;
+  align-self: flex-start;
+}
+.register-form-card-cyber input,
+.register-form-card-cyber input[type='password'],
+.register-form-card-cyber input[type='email'],
+.register-form-card-cyber input[type='text'],
+.register-form-card-cyber input[type='number'],
+.auth-form input,
+.auth-form input[type='password'],
+.auth-form input[type='email'],
+.auth-form input[type='text'],
+.auth-form input[type='number'] {
+  height: 48px;
+  margin-bottom: 22px;
+  padding: 14px 16px;
+  background: #181c20 !important;
+  border: 1.5px solid #00FF9D !important;
+  color: #fff !important;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  margin-top: 0;
+  box-shadow: 0 0 8px #00FF9D33;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.register-form-card-cyber input:focus,
+.auth-form input:focus {
+  outline: none !important;
+  border: 2px solid #00FF9D !important;
+  box-shadow: 0 0 16px #00FF9D88;
+}
+.register-form-card-cyber input::placeholder,
+.auth-form input::placeholder {
+  color: #b6eaff !important;
+  opacity: 0.7;
+}
+.register-form-card-cyber button,
+.auth-form button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.register-form-card-cyber .msg,
+.auth-form .msg {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+@media (max-width: 600px) {
+  .login-form-card-cyber, .register-form-card-cyber {
+    max-width: 99vw;
+    width: 99vw;
+    border-radius: 14px;
+    padding: 16px 2vw 16px 2vw;
+    margin: 10px auto 10px auto;
+    max-height: 98vh;
+  }
+}
+
+.login-form-card-cyber .input-box input,
+.login-form-card-cyber .input-box input[type='password'],
+.login-form-card-cyber .input-box input[type='email'],
+.login-form-card-cyber .input-box input[type='text'],
+.login-form-card-cyber .input-box input[type='number'] {
+  height: 48px;
+  margin-bottom: 22px;
+  padding: 14px 16px;
+  background: #181c20 !important;
+  border: 1.5px solid #00FF9D !important;
+  color: #fff !important;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  margin-top: 0;
+  box-shadow: 0 0 8px #00FF9D33;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.login-form-card-cyber .input-box input:focus {
+  outline: none !important;
+  border: 2px solid #00FF9D !important;
+  box-shadow: 0 0 16px #00FF9D88;
+}
+.login-form-card-cyber .input-box input::placeholder {
+  color: #b6eaff !important;
+  opacity: 0.7;
+}

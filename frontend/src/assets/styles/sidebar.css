@@ -1,0 +1,90 @@
+.user-panel .side-bar {
+    min-width: 140px;
+    max-width: 180px;
+    transition: 0.5s;
+    border-right: 2px solid #00FF9D22;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 2;
+    background-color: var(--cyber-card) !important;
+    min-height: 100vh;
+    border-radius: 0 var(--cyber-radius) var(--cyber-radius) 0;
+    box-shadow: 2px 0 8px #00FF9D22;
+    padding: 0 4px;
+    font-family: var(--cyber-font);
+}
+.user-panel .user-content {
+    width: 100%;
+}
+.user-panel .side-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 18px 15px;
+}
+.user-panel .side-bar ul li {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 18px 24px;
+    border-bottom: 2px solid #00FF9D22;
+    cursor: pointer;
+    border-radius: 8px;
+    color: var(--cyber-primary);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    font-family: var(--cyber-font);
+}
+.user-panel .side-bar ul li:hover {
+    background-color: #111;
+    color: var(--cyber-primary);
+    box-shadow: 0 0 8px #00FF9D33;
+}
+.user-panel .side-bar ul li.active {
+    background-color: var(--cyber-primary);
+    color: #000 !important;
+    box-shadow: 0 0 12px #00FF9D33;
+}
+.user-panel .side-bar ul li i {
+    margin-right: 12px;
+    color: var(--cyber-primary);
+    font-size: 1.2em;
+}
+.user-panel .side-bar ul li.active i {
+    color: #000 !important;
+}
+.user-panel .side-bar ul li.active:hover {
+    filter: brightness(95%);
+}
+.nav-link {
+    text-decoration: none;
+    width: 100%;
+}
+.mobile {
+    display: none;
+}
+
+@media all and (max-width: 768px) {
+    .user-panel .side-bar {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        background-color: var(--cyber-card) !important;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .user-panel .side-bar.open {
+        left: 0;
+    }
+    .mobile {
+        display: inline;
+    }
+    .menu {
+        position: absolute;
+        left: calc(100% + 20px);
+        top: 18px;
+    }
+    .user-panel .side-bar.open .menu {
+        display: none;
+    }
+}

@@ -1,0 +1,191 @@
+:root {
+  --cyber-bg: #0f0f0f;
+  --cyber-primary: #00FF9D;
+  --cyber-text: #d1d1d1;
+  --cyber-card: #181818;
+  --cyber-glow: 0 0 12px #00FF9D55;
+  --cyber-radius: 16px;
+  --cyber-font: 'Poppins', 'Inter', sans-serif;
+}
+
+body, html {
+  background: var(--cyber-bg) !important;
+  color: var(--cyber-text);
+  font-family: var(--cyber-font);
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, .cyber-heading {
+  color: var(--cyber-primary) !important;
+  font-family: var(--cyber-font);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.cyber-card, .dashboard-left, .dashboard-right, .chart-container, .budget-container, .details > div {
+  background: var(--cyber-card) !important;
+  border-radius: var(--cyber-radius);
+  box-shadow: var(--cyber-glow);
+  border: 1.5px solid #00FF9D22;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.cyber-card:hover, .details > div:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 0 18px #00FF9D66;
+}
+
+.button, .cyber-btn, button, input[type="submit"] {
+  background: var(--cyber-primary) !important;
+  color: #000 !important;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--cyber-font);
+  font-weight: bold;
+  padding: 10px 24px;
+  box-shadow: 0 0 8px #00FF9D44;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+.button:hover, .cyber-btn:hover, button:hover, input[type="submit"]:hover {
+  background: #00e68a !important;
+  box-shadow: 0 0 18px #00FF9D, 0 0 8px #00FF9D;
+  transform: scale(1.04);
+}
+
+/* Sidebar */
+.side-bar {
+  background: var(--cyber-card) !important;
+  min-width: 180px !important;
+  max-width: 210px !important;
+  box-shadow: 2px 0 12px #00FF9D22;
+  border-radius: 0 18px 18px 0;
+}
+.side-bar ul li {
+  color: var(--cyber-primary) !important;
+  font-size: 1rem;
+  border-bottom: 1px solid #00FF9D22;
+  box-shadow: none;
+  background: transparent;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.side-bar ul li.active, .side-bar ul li:hover {
+  background: #111;
+  color: #00FF9D !important;
+  box-shadow: 0 0 8px #00FF9D33;
+}
+
+/* Auth Forms */
+.auth-form, .login-card-professional {
+  background: var(--cyber-card) !important;
+  border-radius: var(--cyber-radius);
+  box-shadow: 0 0 18px #00FF9D33;
+  max-width: 450px !important;
+  margin: 0 auto;
+  padding: 32px 24px;
+  z-index: 2;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .dashboard-content, .cyber-center {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+  .side-bar {
+    min-width: 60px !important;
+    max-width: 100vw !important;
+  }
+  .auth-form, .login-card-professional {
+    max-width: 98vw !important;
+    padding: 18px 6px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .auth-form, .login-card-professional {
+    min-width: 0;
+    max-width: 98vw;
+    padding: 12px 2px;
+    border-radius: 8px;
+  }
+}
+
+.cyber-selector, .cyber-select {
+  background: #111111 !important;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #00FF9D22;
+  color: #00FF9D !important;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-weight: 500;
+  border: 1.5px solid #00FF9D;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.cyber-select:focus {
+  outline: none;
+  box-shadow: 0 0 12px #00FF9D;
+  border: 1.5px solid #00FF9D;
+}
+
+.cyber-center {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.cyber-glow-text {
+  color: #00FF9D !important;
+  text-shadow: 0 0 8px #00FF9D88, 0 0 2px #00FF9D;
+}
+
+.cyber-glow-text {
+  color: #00FF9D !important;
+  text-shadow: 0 0 8px #00FF9D88, 0 0 2px #00FF9D;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .cyber-center {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+  .cyber-card {
+    margin-bottom: 16px;
+  }
+}
+
+input[type="text"], input[type="search"], select {
+  background: var(--cyber-card) !important;
+  color: var(--cyber-primary) !important;
+  border: 1.5px solid var(--cyber-primary) !important;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-family: var(--cyber-font);
+  font-size: 1rem;
+  box-shadow: 0 0 8px #00FF9D22;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+input[type="text"]:focus, input[type="search"]:focus, select:focus {
+  outline: none;
+  border: 1.5px solid var(--cyber-primary);
+  box-shadow: 0 0 12px #00FF9D;
+  color: var(--cyber-primary);
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  color: var(--cyber-primary) !important;
+  font-family: var(--cyber-font);
+  font-size: 1rem;
+  margin-right: 18px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+  color: #fff !important;
+  text-shadow: 0 0 8px #00FF9D;
+} 
